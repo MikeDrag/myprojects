@@ -1,0 +1,121 @@
+#InfoImg > img
+{
+    max-width: 100%;
+    padding: 0;
+    padding-right: 3px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+#InfoText
+{
+    color: #cdb68c;
+    background: rgba(54, 0, 0, 0.87);
+    margin-left: 5px;
+    font-size: 18px; 
+    padding: 10px;
+    margin-top: 10px;
+
+}
+#InfoText span{
+    font-size: 16px;
+}
+
+#trailerImg img {
+    padding: 0;
+    border: 1px solid black;
+    margin-left: 5px;
+    height: 300px;
+    margin-top: 10px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+#InfoText label{
+    letter-spacing: 1px;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.btn-primary {
+    background-color:#48100d;
+    border: none;
+    float: right;
+    margin-top: -45px;
+    width: 80px;
+    border: 1px solid #cdb68c;
+    color: #cdb68c;
+    background-color: #a5322c;
+}
+
+.btn-primary:hover {
+    border: 1px solid #cdb68c;
+    background-color: #651e18;
+    color: #958166;
+
+}
+
+#list {
+    height: 20px;
+    width: 20px;
+    position:absolute;
+}
+
+#google_translate_element{
+  float:left;
+  z-index:100;
+  margin:0px;
+}
+#translate{
+    margin-bottom:20px;
+    color:white;
+}
+
+.goog-te-gadget-simple {
+    background-color: #40100C;   
+    border-left: 1px solid #40100C;
+    border-top: 1px solid #40100C;
+    border-bottom: 1px #40100C;
+    border-right: 1px #40100C;
+    font-size: 10pt;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    zoom: 1;
+}
+.movieYear{
+    cursor:pointer;
+}
+.moviePrice{
+    cursor:pointer;
+}
+.movieCategory{
+    cursor:pointer;
+}
+#showTheMovies{
+   float:left;}
+
+
+   /*-------------------RESPONSIVE--------------*/
+   
+@media screen and (min-width: 768px) {
+
+  
+
+
+}
+@media screen and (min-width: 992px){
+  
+
+}
+
+@media screen and (min-width: 1200px){
+  
+
+}

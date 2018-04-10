@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Admin</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+
+    <script src="../scripts/lodash.js"></script>
+    <script src="../scripts/jquery-3.2.1.js"></script>
+    <script src="../scripts/admin-script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+
+
+     <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <script type="text/javascript" src="../scripts/datatables.min.js"></script>
+
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/admin-style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/datatables.min.css"/> --></head>
+<body>
+
+<div class="container">
+    <div>
+        <div>
+            <h1 id="jumboAdmin"> Admin </h1>
+        </div>
+    </div>
+</div>
+<div style="text-align:center;">
+    <label style="color:blue; font-size:50px;"> </label>
+    <span id="showOrder" style="font-size:10px;"></span>
+
+</div>
+<div>
+    <div class="col-md-6 border" id="InfoText">
+        <p id="lastOrder"></p>
+
+    </div>
+
+</div>
+<div class="innerContainer">
+
+    <table class="table" id="myTable">
+        <thead class="thead" id="tableHead">
+        <tr>
+            <th>Order ID</th>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Total Quantity</th>
+            <th>Total Price</th>
+            <th>Created</th>
+            <th>Mail</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+
+    </table>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

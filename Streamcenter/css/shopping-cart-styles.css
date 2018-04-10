@@ -1,0 +1,257 @@
+label > span{
+    font-weight: 100;
+}
+
+#btnBuyMovie{
+    z-index: 999;
+}
+.movieImageStyles {
+    width: 120px;
+    height: 175px;
+}
+
+.shoppingCartDiv {
+    color: #cdb68c;
+    background: rgba(54, 0, 0, 0.87);
+    width: auto;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-size: 18px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+
+}
+
+.totalAmountAndCheckout form {
+    color: #cdb68c;
+    background: rgba(54, 0, 0, 0.87);
+    border: 1px solid black;
+
+}
+
+.styleForEmailInputdiv {
+    color: #cdb68c;
+    background: rgba(54, 0, 0, 0.87);
+    border: 1px solid black;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+
+.styleForEmailInput {
+    width: 100%;
+}
+
+.styleForEmailInputdiv .form-group {
+    width: 100%;
+}
+
+.styleForEmailInputdiv .form-inline .form-control {
+    width: 91%;
+}
+
+input[type="email"] {
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    width: 50%;
+}
+
+input[type="email"]:focus {
+    border: 1px solid #000;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    padding: 4px 8px;
+    border: 1px solid #000;
+    background: #3b5998;
+    color: #fff;
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: #cdb68c;
+    cursor: pointer;
+
+}
+
+.linkStyle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #cdb68c;
+
+}
+
+.moviePicDesign {
+    width: 50px;
+    cursor: pointer;
+}
+
+.shoppingCartDiv label {
+    font-size: 16px;
+    letter-spacing: 2px;
+
+}
+
+.productInfoHeader {
+    color: #cdb68c;
+    background: rgba(54, 0, 0, 0.87);
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+
+.shoppingCartDiv span {
+    font-size: 16px;
+}
+
+.totalAmountAndCheckout {
+    border: 1px solid black;
+    color: #cdb68c;
+    background: rgba(54, 0, 0, 0.87);
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 200px;
+}
+
+#amountToPay {
+
+}
+
+.totalAmountAndCheckout label {
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.btn-checkout {
+    margin-left: 10px;
+    float: right;
+    border: 1px solid #cdb68c;
+    color: #cdb68c;
+    background-color: #a5322c;
+}
+
+.btn-primary {
+    margin-top: 0;
+}
+
+.btn-checkout:hover {
+    border: 1px solid #cdb68c;
+    background-color: #651e18;
+    color: #958166;
+
+}
+
+.moveIcon {
+    margin-right: 30px;
+}
+
+/**** MODAL *****/
+
+.modal-content {
+    background: rgba(54, 0, 0, 0.87);
+    color: #f2daa9;
+    border: 2px solid #cdb68c;
+}
+
+.modal-header, .modal-footer {
+    border: 0;
+}
+
+.modal-body {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.modal-header {
+    text-decoration: underline;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.modal-footer button {
+    border: 1px solid #cdb68c;
+    color: #cdb68c;
+    background-color: #a5322c;
+}
+
+.modal-footer button:hover {
+    border: 1px solid #cdb68c;
+    background-color: #651e18;
+    color: #958166;
+}
+
+/****Shoppingcart dropdown******/
+#shoppingCartDropdown {
+    width: 30%;
+    position: absolute;
+    padding: 10px;
+    float: left;
+ visibility: hidden;
+    margin-left: -70px;
+    background: rgba(54, 0, 0, 0.87);
+    color: #f2daa9;
+    border: 2px solid #cdb68c;
+}
+
+#shoppingCartDropdown div {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+#checkoutBtn {
+    bottom: 10px;
+    position: absolute;
+    width: 90%;
+    border: 1px solid #cdb68c;
+    color: #cdb68c;
+    background-color: #a5322c;
+}
+
+#checkoutBtn:hover {
+    border: 1px solid #cdb68c;
+    background-color: #651e18;
+    color: #958166;
+}
+
+.cartInnerDivStyle {
+    margin-bottom: 40px;
+}
+
+#totalPayStyle {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+#trailerImg{
+    margin-left: 20px;
+}
+
+#google_translate_element{
+  float:left;
+  z-index:100;
+  margin:0px;
+}
+#translate{
+    margin-bottom:20px;
+    color:white;
+}
+
+.goog-te-gadget-simple {
+    background-color: #561313;
+    border-left: 1px solid #d5d5d5;
+    border-top: 1px solid #9b9b9b;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #d5d5d5;
+    font-size: 10pt;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    zoom: 1;
+}

@@ -1,0 +1,20 @@
+#finalOrderInfo{
+    color: #cdb68c;
+    background: rgba(54, 0, 0, 0.87);
+    border: 1px solid black;
+}
+
+ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.hrFinalOrder{
+    height: 1px;
+    color: #f5deb3;
+    background: #f5deb3;
+    font-size: 0;
+    border: 0;
+    width: 90%;
+}
+

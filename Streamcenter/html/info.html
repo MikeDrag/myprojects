@@ -1,0 +1,135 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info-markup</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../scripts/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main-styles.css">
+    <link rel="stylesheet" href="../css/shopping-cart-styles.css">
+
+
+    <!-- scripts -->
+    <script src="../scripts/jquery-3.2.1.js"></script>
+    <script src="../scripts/bootstrap/js/bootstrap.js"></script>
+    <script src="../scripts/header-scripts.js"></script>
+    <script src="../scripts/index-scripts.js"></script>
+    <script src="../scripts/info-scripts.js"></script>
+    <script src="../scripts/shopping-cart-scripts.js"></script>
+    <script src="../scripts/search.js"></script>
+    <script src="../scripts/kategori-scripts.js"></script>
+
+
+    <!-- third party -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Alice|Lobster|Six+Caps|Vidaloka" rel="stylesheet">
+    <script type="text/javascript"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="../css/info-style.css">
+
+</head>
+<body onload="getMovieId();">
+
+
+<!-- NAVBAR
+             ================================================== -->
+<div class="container">
+    <div class="navbar-wrapper">
+
+        <nav class="navbar navbar-inverse navbar-static-top navbar-default nav-custom">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">StreamCenter</a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+
+
+                    <div class="row">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group col-md-5">
+                                <input id ="searchValue" type="text" class="form-control searchInput" placeholder="Write here to search...">
+                                <span id="list"></span>
+                            </div>
+                          </form>
+
+                        <div id="categorySelectList"></div>
+
+                        <div class="navbar-form shoppingCart">
+
+                        </form>
+                           <a href="shopping-cart.html">
+                                <i id="noIfItemsBadge" data-count="" class="">
+                                    <img src="../media/shopping-cart-yellow.png" alt="shopping-cart">
+                                </i>
+                            </a>
+                            <div id="shoppingCartDropdown">
+                                    <input type="submit" class="checkoutBtnStyle" id="checkoutBtn" value="Checkout">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Lägg till den klickade bilden + hämta info om den från API -->
+
+   
+    <div class="subContainer">
+
+            <div id="alertForAddedMovie" class="alert alert-success alert-dismissible hidden" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong> The movie is added in your shopping cart.</strong>
+                </div>
+
+            <div id="InfoImg" class ="col-md-6 col-xs-12 col-sm-6">
+            </div>
+            
+            <div class="col-md-6 col-xs-12 col-sm-6"> 
+              <div id="InfoText">
+             <p id="infoTitle"><label>Title:&nbsp;</label><span class="movieName" id="titleInfo"> </span>
+            </p>
+
+            <p id="#"><label>Description:&nbsp;</label><span class="movieDesc"> </span>
+            </p>
+            <p id="infoYear"><label>Year:&nbsp;</label><a id="linkYear" ><span class="movieYear" id="yearInfo"></a></span>
+            </p>
+
+            <p id="infoCategory"><label>Category:&nbsp;</label><a id="myCategory"><span class="movieCategory" id="categoryInfo"> </a></span>
+            </p>
+
+            <p id="moreInfoYear"><label>Read more:&nbsp;</label><a href="" class="movieMoreInfo" target="_blank"> IMDb </a>
+            </p>
+
+            <p id="infoPrice"><label>Price:&nbsp;</label><a id="linkPrice"><span class="moviePrice" id="priceInfo"></a></span>
+            </p>
+    
+                <!-- KNAPP till varukorg -->
+                <a href="#" role="button" class="btn btn-primary btn-info" id="btnBuyMovie">Buy</a>
+            </div>
+            </div>
+    
+    
+            <!-- Trailerbilden -->
+             <div id="trailerImg">
+                <img  class="col-md-6"src="../media/trailerfive.png" alt="trailer"/>
+            </div>
+        </div>
+    
+        <footer>
+                <p id ="google_translate_element"> </p>
+            &copy; StreamCenter
+        </footer>
+    
+    
+    </div>
+    </body>
+    </html>

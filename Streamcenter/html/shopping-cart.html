@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../scripts/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/info-style.css">
+    <link rel="stylesheet" href="../css/shopping-cart-styles.css">
+
+    <!-- scripts -->
+    <script src="../scripts/jquery-3.2.1.js"></script>
+    <script src="../scripts/bootstrap/js/bootstrap.js"></script>
+    <script src="../scripts/index-scripts.js"></script>
+    <script src="../scripts/header-scripts.js"></script>
+    <script src="../scripts/shopping-cart-scripts.js"></script>
+    <script src="../scripts/kategori-scripts.js"></script>
+    <script src="../scripts/validation.js"></script>
+    <script src="../scripts/send-order.js"></script>
+    <script src="../scripts/search.js"></script>
+    <!-- third party -->
+    <link href="https://fonts.googleapis.com/css?family=Acme|Alice|Lobster|Six+Caps|Vidaloka" rel="stylesheet">
+    <script src="../scripts/lodash.js"></script>
+    <!-- Google Translate -->
+    <script type="text/javascript"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="../css/main-styles.css">
+</head>
+<body>
+<!-- NAVBAR
+             ================================================== -->
+<div class="container">
+    <div class="navbar-wrapper">
+
+        <nav class="navbar navbar-inverse navbar-static-top navbar-default nav-custom">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">StreamCenter</a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+
+
+                    <div class="row">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group col-md-5">
+                                <input id="searchValue" type="text" class="form-control searchInput" placeholder="Write here to search...">   
+                                <span id="list"></span>
+                           </div>
+                       </form>
+
+                        <div id="categorySelectList"></div>
+
+                        <div class="navbar-form shoppingCart">
+
+
+                            <a href="shopping-cart.html">
+                                <i id="noIfItemsBadge" data-count="" class="">
+                                    <img src="../media/shopping-cart-yellow.png" alt="shopping-cart">
+                                </i>
+                            </a>
+                            <div id="shoppingCartDropdown">
+
+                                <input type="submit" class="checkoutBtnStyle" id="checkoutBtn" value="Checkout">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="subContainer">
+
+        <h3 class="headerStyle">Checkout</h3>
+
+
+        <div class="row productInfoHeader">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><label>Titel</label></div>
+            <div class="col-md-2"><label>Price</label></div>
+            <div class="col-md-2"><label>Total</label></div>
+            <div class="col-md-4"><label>Total Change</label></div>
+        </div>
+        <div id="shoppingCartItems"></div>
+
+
+        <form class="form-inline">
+            <div class="row styleForEmailInputdiv">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" name="email" id="emailFromUser" class="form-control input-lg styleForEmailInput"
+                               placeholder="example@mail.com" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row totalAmountAndCheckout">
+                <div class="col-md-12">
+                    <label>Amount to Pay: <label id="amountToPay"></label><label>&nbsp;SEK</label></label>
+                    <button type="button" class="btn btn-primary btn-checkout pull-right" disabled
+                            id="btnConfirmCheckout">Confirm
+                    </button>
+                    <input type="button" value="Cancel"  class="btn btn-danger pull-right" id="btnCancelCheckout">
+
+                </div>
+            </div>
+
+        </form>
+
+
+    </div>
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Thanks for your order!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>An e-mail has been sent to your account, please click on the link to see your orders.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="closeModalAndRedirect" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+       <p id ="google_translate_element"> </p>
+        &copy; StreamCenter
+    </footer>
+
+</div>
+
+
+</body>
+</html>

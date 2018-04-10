@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kategori-markup</title>
+
+
+    <link rel="stylesheet" href="../scripts/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main-styles.css">
+    <link rel="stylesheet" href="../css/kategori-style.css">
+    <link rel="stylesheet" href="../css/shopping-cart-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Alice|Lobster|Six+Caps|Vidaloka" rel="stylesheet">
+
+    <script src="../scripts/jquery-3.2.1.js"></script>
+    <script src="../scripts/bootstrap/js/bootstrap.js"></script>
+    <script src="../scripts/search.js"></script>
+    <script src="../scripts/shopping-cart-scripts.js"></script>
+    <script src="../scripts/header-scripts.js"></script>
+    <script src="../scripts/index-scripts.js"></script>
+    <script src="../scripts/kategori-scripts.js"></script>
+    <script src="../scripts/lodash.js"></script>
+    
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="../css/main-styles.css">
+</head>
+<body>
+
+
+<!-- NAVBAR
+             ================================================== -->
+<div class="container">
+    <div class="navbar-wrapper">
+
+        <nav class="navbar navbar-inverse navbar-static-top navbar-default nav-custom">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">StreamCenter</a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+
+
+                    <div class="row">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group col-md-5">
+                                <input id="searchValue" type="text" class="form-control searchInput"
+                                       placeholder="Write here to search...">
+                                <span id="list"></span>
+                            </div>
+                        </form>
+
+                        <div id="categorySelectList"></div>
+
+                        <div class="navbar-form shoppingCart">
+
+
+                            <a href="shopping-cart.html">
+                                <i id="noIfItemsBadge" data-count="" class="">
+                                    <img src="../media/shopping-cart-yellow.png" alt="shopping-cart">
+                                </i>
+                            </a>
+                            <div id="shoppingCartDropdown">
+
+                                <input type="submit" class="checkoutBtnStyle" id="checkoutBtn" value="Checkout">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h2 id="categoryHeader" class="headerStyle"></h2>
+
+    <div class="row">
+        <div class="col-md-5"></div>
+    </div>
+
+    <div class="filterDiv">
+        <h3 class="sortCategories yellowColour">Sort By</h3>
+
+        <div id="filterNameDiv" class="filterFunction">
+            <a href="#" id="filterName"><label>Name</label></a>
+            <span  class="glyphicon glyphicon-chevron-up yellowColour"></span>
+        </div>
+
+        <div id="filterDateDiv" class="filterFunction">
+            <a href="#" id="filterDate"><label>Year Added</label></a>
+            <span class="glyphicon glyphicon-chevron-up yellowColour"></span>
+        </div>
+
+        <div id="filterPriceDiv" class="filterFunction">
+            <a href="#" id="filterPrice"><label>Price</label></a>
+            <span class="glyphicon glyphicon-chevron-up yellowColour"></span>
+        </div>
+
+        <div id="filterYearDiv" class="filterFunction">
+            <a href="#" id="filterYear"><label>Year</label></a>
+            <span class="glyphicon glyphicon-chevron-up yellowColour"></span>
+        </div>
+
+
+    </div>
+    <h3 class="hrIndex"></h3>
+
+    <div id="kategoriContainer">
+    </div>
+    <footer>
+       <p id ="google_translate_element"> </p>
+        &copy; StreamCenter
+    </footer>
+
+</div>
+
+
+</body>
+</html>
