@@ -1,0 +1,42 @@
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TwitchTv App</title>
+	<!--Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+	<div class="selector">
+	   <select>
+		<option id="selectAll" value="3">ALL</option>
+			<option id="selectOnline" value="1">ONLINE</option>
+		<option id="selectOffline" value="2">OFFLINE</option>
+	</select>
+	 </div>
+
+		<h1 id="twichStreamersDiv"><u>Twitch Streamers:</u></h1>
+			<div id="freeCode">FreeCodeCamp <img src="https://avatars0.githubusercontent.com/u/9892522?s=400&v=4"><h6 id="streamingOrNot"><i><a id="freeLink"></a></i></h6></div>
+			<div id="esl">Dota 2 <img src="https://pbs.twimg.com/profile_images/876228508988592129/uJ4oIi9__400x400.jpg"><h6 id="eslStreaming" value ="offline"><i><a id="eslLink"></a></i></h6></div>
+			<div id="test">Test_Channel<img src="https://static-cdn.jtvnw.net/user-default-pictures/27103734-3cda-44d6-a384-f2ab71e4bb85-profile_image-300x300.jpg"><h6 id="testStreaming"><i><a id="testLink"></a></i></h6>
+	  </div>
+	<div>
+	<iframe src="https://player.twitch.tv/?channel=freecodecamp" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/freecodecamp?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">Titta på livevideo från FreeCodeCamp på www.twitch.tv</a>
+	</div>
+	<div>
+	<iframe src="https://player.twitch.tv/?channel=dreadztv" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/dreadztv?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">Titta på livevideo från DreadzTV på www.twitch.tv</a>
+	</div>
+	<div>
+		<iframe src="https://player.twitch.tv/?channel=sampev2" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/sampev2?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">Titta på livevideo från SampeV2 på www.twitch.tv</a>
+	</div>
+<script src="scripts/main.js"></script>
+</body>
+</html>

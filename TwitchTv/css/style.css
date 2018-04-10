@@ -1,0 +1,84 @@
+body{
+	background-image: url("https://cdn.wallpapersafari.com/57/55/059kcA.jpg");
+}
+#twichStreamersDiv{
+	text-align:center;
+	font-size:50px;
+	color:white;
+	cursor:pointer;
+}
+#freeCode{
+	border:1px solid green;
+	font-size:30px;
+	color:green;
+	float:left;
+	position:relative;
+
+}
+#esl{
+	border:1px solid green;
+	font-size:30px;
+	color:red;
+	float:left;
+	position:relative;
+
+
+}
+#test{
+	border:1px solid green;
+	font-size:30px;
+	color:purple;
+	float:left;
+	position:relative;
+}
+#streamingOrNot{
+
+	font-size:30px;
+	color:orange;
+}
+#freeLink{
+	font-size:30px;
+	color:pink;
+}
+#eslStreaming{
+	font-size:30px;
+	color:orange;
+}
+#eslLink{
+	font-size:30px;
+	color:pink;
+}
+#testStreaming{
+	font-size:30px;
+	color:orange;
+}
+#testLink{
+	font-size:30px;
+	color:pink;
+}
+div{
+	width:33.3%;
+}
+img{
+	height:40px;
+	width:40px;
+}
+#inputsDiv{
+	text-align:center;
+}
+option{
+	font-size:20px;
+	color:red;
+	float:left;
+	position:relative;
+	color:green;
+}
+iframe{
+	float:left;
+}
+@media (max-width: 768px) {
+    div {
+        width: 100%;
+        
+    }
+}
